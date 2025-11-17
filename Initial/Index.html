@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Cumpleaños Tina</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- TERMINAL -->
@@ -16,11 +16,11 @@
         </div>
     </div>
 
-    <!-- ESCENA 3D (oculta inicialmente) -->
+    <!-- ESCENA 3D -->
     <div id="escena-3d" style="display:none;">
         <div id="container"></div>
         
-        <!-- UI -->
+        <!-- UI Overlay -->
         <div id="ui-overlay">
             <div class="ui-title">🎂 Feliz Cumpleaños, Tina</div>
             <div id="instructions">
@@ -37,7 +37,7 @@
             </button>
         </div>
 
-        <!-- Info de la canción -->
+        <!-- Info de canción -->
         <div id="track-info">
             <div class="track-name">—</div>
             <div class="track-artist">—</div>
@@ -50,7 +50,14 @@
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
-    <!-- Tu script -->
-    <script src="script.js"></script>
+    <!-- Scripts modulares -->
+    <script src="js/config.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/scene/environment.js"></script>
+    <script src="js/scene/table.js"></script>
+    <script src="js/scene/cake.js"></script>
+    <script src="js/scene/frames.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
