@@ -2,10 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Feliz Cumpleaños</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Tina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- TERMINAL -->
     <div id="terminal">
         <div id="output"></div>
         <div id="input-line">
@@ -14,11 +16,41 @@
         </div>
     </div>
 
+    <!-- ESCENA 3D (oculta inicialmente) -->
     <div id="escena-3d" style="display:none;">
-        <h1>¡Bienvenida!</h1> 
-        <p>Tu escena 3D cargará aquí.</p>
+        <div id="container"></div>
+        
+        <!-- UI -->
+        <div id="ui-overlay">
+            <div class="ui-title">🎂 Feliz Cumpleaños, Tina</div>
+            <div id="instructions">
+                🖱️ Arrastra: mirar alrededor<br>
+                🖱️ Rueda: acercarte/alejarte<br>
+                👆 Click: interactuar
+            </div>
+        </div>
+
+        <!-- Controles de música -->
+        <div id="music-controls">
+            <button class="music-btn" id="play-music">
+                <span id="music-icon">▶️</span> Música
+            </button>
+        </div>
+
+        <!-- Info de la canción -->
+        <div id="track-info">
+            <div class="track-name">—</div>
+            <div class="track-artist">—</div>
+        </div>
+
+        <!-- Hint de interacción -->
+        <div id="interaction-hint">✨ Click para explorar ✨</div>
     </div>
 
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Tu script -->
     <script src="script.js"></script>
 </body>
 </html>
