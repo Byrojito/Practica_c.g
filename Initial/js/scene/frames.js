@@ -5,18 +5,18 @@ function createRealisticFrames() {
     
     const frameData = [
         {
-            pos: [-1.2, tableHeight + 0.05, 0.5], // SOBRE la mesa
-            rot: [0, Math.PI * 0.2, 0], // Girado hacia el centro
+            pos: [-0.8, tableHeight + 0.05, 0.2], // Más cerca
+            rot: [0, Math.PI * 0.25, 0],
             photo: CONFIG.images.photo1
         },
         {
-            pos: [0, tableHeight + 0.05, -0.9], // SOBRE la mesa, al fondo
+            pos: [0, tableHeight + 0.05, -0.5], // Más cerca al centro
             rot: [0, 0, 0],
             photo: CONFIG.images.photo2
         },
         {
-            pos: [1.2, tableHeight + 0.05, 0.5], // SOBRE la mesa
-            rot: [0, -Math.PI * 0.2, 0], // Girado hacia el centro
+            pos: [0.8, tableHeight + 0.05, 0.2], // Más cerca
+            rot: [0, -Math.PI * 0.25, 0],
             photo: CONFIG.images.photo3
         }
     ];

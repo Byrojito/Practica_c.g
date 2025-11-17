@@ -70,7 +70,7 @@ function createCheckeredCloth(parent, width, depth, height) {
     for (let x = 0; x < numSquares; x++) {
         for (let y = 0; y < numSquares; y++) {
             // Alternar entre rojo y blanco
-            ctx.fillStyle = (x + y) % 2 === 0 ? '#DC143C' : '#FFFFFF';
+            ctx.fillStyle = (x + y) % 2 === 0 ? '#8B4789' : '#E6D5E6';
             ctx.fillRect(x * squareSize, y * squareSize, squareSize, squareSize);
         }
     }

@@ -13,20 +13,20 @@ const CONFIG = {
         { name: 'Lover', artist: 'Taylor Swift', url: 'assets/music/track3.mp3' }
     ],
     camera: {
-        // Posición REALISTA: sentado en la mesa
-        position: { x: 0, y: 0.95, z: 1.2 }, // Altura de ojos sentado, MUY cerca
-        fov: 80, // Campo de visión amplio (más humano)
+        // AJUSTADO: Perspectiva REAL como en tus fotos
+        position: { x: 0, y: 0.85, z: 0.4 }, // MUY CERCA
+        fov: 75, // Campo de visión natural
         near: 0.01,
         far: 100
     },
     table: {
-        height: 0.75, // Altura de mesa que llega al torso
+        height: 0.75,
         width: 3.5,
         depth: 2.5
     },
     cake: {
-        scale: 0.5, // Más pequeño, realista
-        position: { x: 0, y: 0.75, z: -0.4 } // Centro de la mesa
+        scale: 0.5,
+        position: { x: 0, y: 0.75, z: -0.2 } // Más cerca de la cámara
     }
 };
 
